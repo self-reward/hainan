@@ -3,44 +3,44 @@ const plans = {
     {
       date: "6/2",
       weekday: "周二",
-      title: "合肥飞三亚，晚上只做一件事：入住椰梦长廊",
-      text: "到凤凰机场后直接打车到椰梦长廊一带。若 21:30 后到，不安排正餐海鲜，吃清补凉、抱罗粉或椰子鸡简餐，早点睡。",
+      title: "合肥飞三亚，入住椰梦长廊",
+      text: "到凤凰机场后打车到椰梦长廊入住。21:30 后到不安排正餐海鲜，吃清补凉或粉汤，早点睡。",
       meta: ["住椰梦长廊", "机场近", "今晚不赶景点"],
     },
     {
       date: "6/3",
       weekday: "周三",
-      title: "三亚 Day1：西岛、牛王岭和椰梦长廊日落",
-      text: "上午从椰梦长廊去肖旗港码头上西岛，逛渔村、海边小路、珊瑚石墙；下午去牛王岭、乌龟滩和礁石海岸，看潮汐做轻度赶海观察。17:00 前后离岛，回椰梦长廊看日落，晚上吃海鲜。",
-      meta: ["西岛默认主线", "看潮汐", "椰梦长廊日落"],
+      title: "蜈支洲岛（6-8h）+ 椰梦长廊日落",
+      text: "8:00 第一班上岛，玩水上项目或环岛观光。16:00 前下岛，打车 1h 回椰梦长廊≈17:00，正好赶橘子海日落。后海村不用去。",
+      meta: ["果冻海天花板", "水上项目全包", "椰梦长廊日落"],
     },
     {
       date: "6/4",
       weekday: "周四",
-      title: "三亚 Day2：亚龙湾/太阳湾，免税城可选",
-      text: "上午去亚龙湾热带天堂森林公园或太阳湾公路，午后留给亚龙湾公共海滩拍蓝海、沙滩和比基尼。16:30 后二选一：轻松版回椰梦长廊看日落；购物版去海棠湾 cdf，但当天会更累。",
-      meta: ["补海水沙滩", "cdf可选", "别把免税硬塞"],
+      title: "太阳湾+亚龙湾+鹿回头",
+      text: "可选早起去太阳湾看日出（6:00）→ 太阳湾公路拍照 → 亚龙湾海滩（2-3h）→ 16:30 鹿回头俯瞰三亚日落。大东海小东海跳过，帆船港顺路拍照。",
+      meta: ["太阳湾日出可选", "亚龙湾沙滩", "鹿回头日落"],
     },
     {
       date: "6/5",
       weekday: "周五",
-      title: "三亚 Day3：天涯小镇或南山，半山半岛和鹿回头，晚上到海口",
-      text: "推荐轻松拍照版：天涯小镇、午餐、回酒店收拾休息，下午去半山半岛帆船港和鹿回头。若很想看南山，就把上午改成南山 + 天涯小镇，取消半山半岛。",
-      meta: ["天涯小镇优先", "南山备选", "晚上动车去海口"],
+      title: "西岛（4-6h）+ 椰梦长廊最后一场日落",
+      text: "文艺渔村小岛，玻璃海+网红打卡点。下午回椰梦长廊，导航'凤凰岛桥头公园'或'美丽新海岸公交站'看橘子海。西岛不用再买水上项目，纯拍照闲逛。",
+      meta: ["西岛文艺渔村", "椰梦日落", "慢节奏收尾"],
     },
     {
       date: "6/6",
       weekday: "周六",
-      title: "海口 Day2：老爸茶、日月广场免税、云洞和海口湾",
-      text: "上午老爸茶，之后去日月广场免税店买香水化妆品；想逛大店再改海口国际免税城。下午云洞图书馆或天空之山，傍晚海口湾和世纪大桥，晚上夜市。",
-      meta: ["日月广场最顺", "云洞提前预约", "海口湾傍晚"],
+      title: "三亚湾+天涯小镇 → 中午高铁去海口",
+      text: "上午三亚湾散步拍照+天涯小镇（白墙蓝窗）。中午三亚站→海口东站高铁。下午骑楼老街→云洞图书馆→海大南门夜市。",
+      meta: ["天涯小镇拍照", "中午高铁海口", "下午骑楼+云洞+夜市"],
     },
     {
       date: "6/7",
       weekday: "周日",
-      title: "海口 Day3：轻松早餐、补买免税，回合肥",
-      text: "根据航班安排轻松早餐、老街补逛或美兰机场免税店补货。返程前留足去机场和提货时间，不把最后一天排成赶路。",
-      meta: ["机场补货", "留足提货时间", "回合肥"],
+      title: "日月广场免税 + 海口 → 合肥 17:15",
+      text: "自然醒，日月广场免税（香化主战场）或市区早午餐。中午退房，15:00 前到美兰机场。17:15 起飞回合肥。",
+      meta: ["日月广场香化最划算", "机场提货提前6h下单", "17:15起飞"],
     },
   ],
   compact: [
@@ -54,52 +54,59 @@ const plans = {
     {
       date: "6/3",
       weekday: "周三",
-      title: "西岛完整日，晚上椰梦长廊",
-      text: "把三亚的海岛体验压缩到西岛一天：渔村、牛王岭、乌龟滩、低潮观察。晚上海鲜和椰梦长廊日落。",
-      meta: ["西岛主线", "别排太满", "低潮看潮汐"],
+      title: "蜈支洲岛 + 椰梦长廊日落",
+      text: "三亚海水天花板，水上项目或环岛观光。16:00 下岛回椰梦长廊看日落。",
+      meta: ["果冻海", "水上项目全", "椰梦日落"],
     },
     {
       date: "6/4",
       weekday: "周四",
-      title: "亚龙湾/太阳湾，免税可跳过",
-      text: "上午太阳湾或森林公园，下午亚龙湾公共海滩。若不想赶路，别去海棠湾 cdf，把香水化妆品留到海口日月广场。",
-      meta: ["补海水颜值", "cdf可选", "免税放海口"],
+      title: "亚龙湾/太阳湾 + 鹿回头",
+      text: "上午太阳湾公路+亚龙湾海滩，下午鹿回头俯瞰三亚。",
+      meta: ["太阳湾公路", "亚龙湾沙滩", "鹿回头日落"],
     },
     {
       date: "6/5",
       weekday: "周五",
-      title: "天涯小镇、半山半岛和鹿回头，晚上到海口",
-      text: "上午天涯小镇，下午回酒店休息收拾，再去半山半岛帆船港和鹿回头。晚上动车到海口，轻逛骑楼老街。",
-      meta: ["天涯小镇拍照", "鹿回头傍晚", "晚上到海口"],
+      title: "西岛渔村 + 椰梦长廊",
+      text: "西岛拍照闲逛，下午回椰梦长廊最后一场日落。",
+      meta: ["西岛渔村", "椰梦日落", "慢节奏"],
     },
     {
       date: "6/6",
       weekday: "周六",
-      title: "老爸茶、日月广场免税、云洞，晚上返合肥",
-      text: "上午老爸茶和日月广场免税店，下午云洞图书馆或海口湾。晚航班回合肥，给市区到美兰机场和提货预留时间。",
-      meta: ["日月广场免税", "云洞/海口湾", "别压线去机场"],
+      title: "三亚湾+天涯小镇 → 中午高铁海口 → 骑楼+云洞",
+      text: "上午三亚湾+天涯小镇，中午高铁海口，下午逛骑楼和云洞。",
+      meta: ["天涯小镇", "中午高铁", "下午海口"],
+    },
+    {
+      date: "6/7",
+      weekday: "周日",
+      title: "日月广场免税，15:00前到机场，17:15回合肥",
+      text: "日月广场免税买香化，中午退房去美兰机场。",
+      meta: ["日月广场免税", "15:00前到机场", "17:15起飞"],
     },
   ],
 };
 
 const budgets = {
   low: [
-    ["机票/动车", "¥1,300-2,300", "早晚航班、少托运行李，三亚到海口坐动车。"],
-    ["住宿", "¥1,100-1,900", "近海但不追一线海景，三亚 3 晚、海口 2 晚。"],
-    ["餐饮", "¥700-1,000", "海鲜控制一顿，其他用粉面、老爸茶和夜市补齐。"],
-    ["门票/项目/购物", "¥400-1,000+", "西岛、亚龙湾、鹿回头为主；免税购物按香化清单另算。"],
+    ["机票/动车", "¥1,300-2,000", "早晚航班、少托运行李，三亚到海口坐动车。"],
+    ["住宿", "¥900-1,500", "近海但不追一线海景，三亚 3 晚、海口 1 晚。"],
+    ["餐饮", "¥600-900", "海鲜控制一顿，其他用粉面、老爸茶和夜市补齐。"],
+    ["门票/项目/购物", "¥500-1,200+", "蜈支洲可选套票、西岛、鹿回头为主；免税香化另算。"],
   ],
   comfort: [
-    ["机票/动车", "¥1,600-2,800", "优先少折腾的航班，动车按返程机场衔接。"],
-    ["住宿", "¥1,700-2,900", "三亚 3 晚住海景/近海，海口 2 晚住骑楼老街或海口湾。"],
-    ["餐饮", "¥900-1,400", "椰梦长廊住处周边吃饭方便，三亚海鲜一到两顿，海口留老爸茶和夜市。"],
-    ["门票/项目/购物", "¥700-1,600+", "西岛、亚龙湾、鹿回头、海口城市点位；免税香化另算。"],
+    ["机票/动车", "¥1,600-2,500", "优先少折腾的航班，动车按返程机场衔接。"],
+    ["住宿", "¥1,500-2,500", "三亚 3 晚住海景/近海，海口 1 晚住骑楼老街或海口湾。"],
+    ["餐饮", "¥800-1,300", "椰梦长廊周边吃饭方便，三亚海鲜一到两顿，海口留老爸茶和夜市。"],
+    ["门票/项目/购物", "¥800-2,000+", "蜈支洲套票、西岛、鹿回头、直升机可选；免税香化另算。<br><em>⚠ 以上为粗略估计，实际波动大，以预订时价格为准</em>"],
   ],
   plus: [
-    ["机票/动车", "¥2,000-3,500", "选择更好时段，减少红眼和长等待。"],
-    ["住宿", "¥2,600-4,600", "三亚一线海景或带泳池住 3 晚，海口住海口湾。"],
-    ["餐饮", "¥1,300-2,000", "海鲜、糟粕醋、椰子鸡都安排，但避免连续重餐。"],
-    ["门票/项目/购物", "¥1,200-2,500+", "蜈支洲/后海冲浪、旅拍或水上项目另算；免税店按购买清单另算。"],
+    ["机票/动车", "¥2,000-3,200", "选择更好时段，减少红眼和长等待。"],
+    ["住宿", "¥2,400-4,000", "三亚一线海景或带泳池 3 晚，海口住海口湾。"],
+    ["餐饮", "¥1,200-1,800", "海鲜、糟粕醋、椰子鸡都安排，但避免连续重餐。"],
+    ["门票/项目/购物", "¥1,500-3,500+", "蜈支洲极限套票+直升机+游艇+旅拍；免税另算。"],
   ],
 };
 
@@ -117,7 +124,7 @@ const clearNoteButton = document.querySelector("#clearNote");
 const copyNoteButton = document.querySelector("#copyNote");
 const submitIssueButton = document.querySelector("#submitIssue");
 const noteStorageKey = "hainan-trip-note";
-const feedbackRepo = "qwrazdf/hainan";
+const feedbackRepo = "self-reward/hainan";
 
 const revealObserver =
   "IntersectionObserver" in window
@@ -349,6 +356,57 @@ if (clearNoteButton) {
 if (submitIssueButton) {
   submitIssueButton.addEventListener("click", openIssueDraft);
 }
+
+/* ── Map Image Zoom (Lightbox) ── */
+function initImageZoom() {
+  const zoomImages = document.querySelectorAll(".zoomable-img");
+  if (!zoomImages.length) return;
+
+  let lightbox = document.querySelector(".image-lightbox");
+  if (!lightbox) {
+    lightbox = document.createElement("div");
+    lightbox.className = "image-lightbox";
+    lightbox.innerHTML = '<button class="lightbox-close" aria-label="关闭">&#10005;</button>';
+    document.body.appendChild(lightbox);
+  }
+
+  const lightboxImg = document.createElement("img");
+  lightbox.appendChild(lightboxImg);
+
+  const closeBtn = lightbox.querySelector(".lightbox-close");
+
+  function openLightbox(src) {
+    lightboxImg.src = src;
+    lightbox.classList.add("show");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("show");
+    document.body.style.overflow = "";
+    lightboxImg.src = "";
+  }
+
+  zoomImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      openLightbox(img.src);
+    });
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox || e.target === closeBtn) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("show")) {
+      closeLightbox();
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initImageZoom);
 
 if (window.lucide) {
   window.lucide.createIcons();

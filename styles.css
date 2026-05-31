@@ -522,7 +522,7 @@ h1 {
 }
 
 .section {
-  padding: 76px 0;
+  padding: 60px 0;
   background: #fff;
 }
 
@@ -1065,6 +1065,137 @@ h1 {
   transform: translateY(0);
 }
 
+/* ── Map Image Zoom ── */
+.zoomable-img {
+  cursor: zoom-in;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoomable-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 28px rgba(16, 35, 58, 0.18);
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(16, 35, 58, 0.88);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  cursor: zoom-out;
+}
+
+.image-lightbox.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+  line-height: 1;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+/* ── Sunset Reference Image ── */
+.sunset-ref-img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 18px 48px rgba(16, 35, 58, 0.14);
+}
+
+/* ── Card hover effects ── */
+.route-cards article,
+.route-decision-grid article,
+.day-card,
+.pick,
+.food-board article,
+.prep-grid article,
+.budget-card,
+.vibe-card,
+.signal {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.route-cards article:hover,
+.route-decision-grid article:hover,
+.day-card:hover,
+.pick:hover,
+.food-board article:hover,
+.prep-grid article:hover,
+.budget-card:hover,
+.vibe-card:hover,
+.signal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 44px rgba(16, 35, 58, 0.12);
+}
+
+/* ── Table zebra striping ── */
+.final-route-table article:nth-child(even) {
+  background: rgba(255, 248, 232, 0.6);
+}
+
+/* ── Budget warning note ── */
+.budget-warning {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: rgba(255, 209, 102, 0.22);
+  color: var(--deep);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+/* ── Tip box ── */
+.tip-box {
+  margin-top: 18px;
+  padding: 18px 22px;
+  border: 1px solid rgba(0, 166, 180, 0.3);
+  border-radius: 8px;
+  background: rgba(0, 166, 180, 0.06);
+  color: var(--deep);
+  line-height: 1.75;
+}
+
+.tip-box strong {
+  color: var(--sea);
+}
+
 @keyframes shorePan {
   from {
     transform: scale(1.04) translate3d(-1.2%, 0, 0);
@@ -1252,7 +1383,7 @@ h1 {
   }
 
   .section {
-    padding: 54px 0;
+    padding: 60px 0;
   }
 
   .section-heading.compact,
