@@ -389,7 +389,13 @@ function initImageZoom() {
 
   zoomImages.forEach((img) => {
     img.addEventListener("click", () => {
-      openLightbox(img.src);
+      // For Wikimedia images, strip ?width= param for full-size; for local images use src as-is
+      let fullSrc = img.src;
+      const url = new URL(img.src, window.location.href);
+      if (url.hostname.includes("wikimedia.org") || url.pathname.includes("Special:FilePath")) {
+        fullSrc = img.src.replace(/\?width=\d+/, "?width=1600");
+      }
+      openLightbox(fullSrc);
     });
   });
 
